@@ -13,19 +13,19 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# inherit from common s3ve3g
-include device/samsung/s3ve3g-common/BoardConfigCommon.mk
+# inherit from common ms01
+include device/samsung/ms01-common/BoardConfigCommon.mk
 
 # Shims
 TARGET_LD_SHIM_LIBS += \
         /system/vendor/lib/libmmcamera_imx175.so|libshim_imx175.so
 
 # Kernel
-TARGET_KERNEL_CONFIG := lineage_s3ve3gds_defconfig
+TARGET_KERNEL_CONFIG := lineage_ms013g_defconfig
 
 # Init
 TARGET_INIT_VENDOR_LIB := libinit_msm8226
-TARGET_LIBINIT_MSM8226_DEFINES_FILE := device/samsung/s3ve3gds/init/init_s3ve3g.cpp
+TARGET_LIBINIT_MSM8226_DEFINES_FILE := device/samsung/ms013g/init/init_ms01.cpp
 
 # NFC
 # include $(COMMON_PATH)/nfc/pn547/board.mk
@@ -34,4 +34,4 @@ TARGET_LIBINIT_MSM8226_DEFINES_FILE := device/samsung/s3ve3gds/init/init_s3ve3g.
 include $(COMMON_PATH)/radio/dual/board.mk
 
 # inherit from the proprietary version
--include vendor/samsung/s3ve3gds/BoardConfigVendor.mk
+-include vendor/samsung/ms013g/BoardConfigVendor.mk
