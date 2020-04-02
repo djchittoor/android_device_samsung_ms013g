@@ -27,10 +27,6 @@ TARGET_USERIMAGES_USE_F2FS := true
 TARGET_USERIMAGES_USE_EXT4 := true
 BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := f2fs
 
-# Shims
-TARGET_LD_SHIM_LIBS += \
-        /system/vendor/lib/libmmcamera_imx175.so|libshim_imx175.so
-
 # Kernel
 TARGET_KERNEL_CONFIG := lineage_ms013g_defconfig
 

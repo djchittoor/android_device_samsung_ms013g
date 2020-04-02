@@ -20,10 +20,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 # Get non-open-source specific aspects
 $(call inherit-product-if-exists, vendor/samsung/ms013g/ms013g-vendor.mk)
 
-# Camera
-PRODUCT_PACKAGES += \
-    libshim_imx175
-
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
