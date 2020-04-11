@@ -30,9 +30,6 @@ BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := f2fs
 # Kernel
 TARGET_KERNEL_CONFIG := lineage_ms013g_defconfig
 
-# Init
-TARGET_INIT_VENDOR_LIB := libinit_msm8226
-TARGET_LIBINIT_MSM8226_DEFINES_FILE := device/samsung/ms013g/init/init_ms01.cpp
 
 # NFC
 # include $(COMMON_PATH)/nfc/pn547/board.mk
