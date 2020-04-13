@@ -23,9 +23,6 @@ $(call inherit-product-if-exists, vendor/samsung/ms013g/ms013g-vendor.mk)
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
-# NFC
-# $(call inherit-product, device/samsung/ms01-common/nfc/pn547/product.mk)
-
 # Radio/RIL
 $(call inherit-product, device/samsung/ms01-common/radio/dual/product.mk)
 

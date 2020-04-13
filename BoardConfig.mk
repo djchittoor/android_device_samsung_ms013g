@@ -30,10 +30,6 @@ BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := f2fs
 # Kernel
 TARGET_KERNEL_CONFIG := lineage_ms013g_defconfig
 
-
-# NFC
-# include $(COMMON_PATH)/nfc/pn547/board.mk
-
 # Radio/RIL
 include $(COMMON_PATH)/radio/dual/board.mk
 
