@@ -26,5 +26,9 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 # Radio/RIL
 $(call inherit-product, device/samsung/ms01-common/radio/dual/product.mk)
 
+# Recorder
+PRODUCT_PACKAGES += \
+    Recorder
+
 # common ms01
 $(call inherit-product, device/samsung/ms01-common/ms01.mk)
